@@ -35,7 +35,7 @@ import sys
 import inspect
 
 from qgis.core import QgsProcessingAlgorithm, QgsApplication
-from .geoHey_toolbox_provider import GeoHeyToolboxProvider
+from .geohey_toolbox_provider import GeoHeyToolboxProvider
 
 cmd_folder = os.path.split(inspect.getfile(inspect.currentframe()))[0]
 

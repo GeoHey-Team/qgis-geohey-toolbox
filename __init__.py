@@ -35,5 +35,5 @@ def classFactory(iface):  # pylint: disable=invalid-name
     :type iface: QgsInterface
     """
     #
-    from .geoHey_toolbox import GeoHeyToolboxPlugin
+    from .geohey_toolbox import GeoHeyToolboxPlugin
     return GeoHeyToolboxPlugin()
