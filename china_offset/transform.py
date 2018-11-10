@@ -21,7 +21,9 @@
  *                                                                         *
  ***************************************************************************/
 """
+from __future__ import print_function
 ##########################################################################################
+from builtins import zip
 import math
 from math import sin, cos, sqrt, fabs, atan2
 from math import pi as PI
@@ -77,16 +79,16 @@ def gcj2wgs(gcjLon, gcjLat):
     w0 = g0
     g1 = wgs2gcj(w0[0], w0[1])
     # w1 = w0 - (g1 - g0)
-    w1 = tuple(map(lambda x: x[0]-(x[1]-x[2]), zip(w0,g1,g0)))
+    w1 = tuple([x[0]-(x[1]-x[2]) for x in zip(w0,g1,g0)])
     # delta = w1 - w0
-    delta = tuple(map(lambda x: x[0] - x[1], zip(w1, w0)))
+    delta = tuple([x[0] - x[1] for x in zip(w1, w0)])
     while (abs(delta[0]) >= 1e-6 or abs(delta[1]) >= 1e-6):
         w0 = w1
         g1 = wgs2gcj(w0[0], w0[1])
         # w1 = w0 - (g1 - g0)
-        w1 = tuple(map(lambda x: x[0]-(x[1]-x[2]), zip(w0,g1,g0)))
+        w1 = tuple([x[0]-(x[1]-x[2]) for x in zip(w0,g1,g0)])
         # delta = w1 - w0
-        delta = tuple(map(lambda x: x[0] - x[1], zip(w1, w0)))
+        delta = tuple([x[0] - x[1] for x in zip(w1, w0)])
     return w1
 
 

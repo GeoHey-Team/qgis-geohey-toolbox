@@ -37,9 +37,11 @@ grid area(km2) of each level
 (18, 0.003720) 
 """
 
+from builtins import range
+from builtins import object
 import math
 
-class LambertGrid:
+class LambertGrid(object):
     """LambertGrid Class"""
     def __init__(self, level, minx, maxx, miny, maxy, flip=False):
         # default y-axe direction is up

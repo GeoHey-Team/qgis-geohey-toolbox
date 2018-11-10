@@ -20,7 +20,9 @@
  *                                                                         *
  ***************************************************************************/
 """
+from __future__ import absolute_import
 
+from builtins import str
 __author__ = 'GeoHey'
 __date__ = '2016-11-15'
 __copyright__ = '(C) 2016 by GeoHey'
@@ -29,17 +31,18 @@ __copyright__ = '(C) 2016 by GeoHey'
 
 __revision__ = '$Format:%H$'
 
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
-from qgis.core import *
+import os 
+from qgis.PyQt.QtCore import QSettings, QVariant
+from qgis.core import QgsVectorFileWriter, QgsMessageLog, QgsFeature, QGis, QgsGeometry, QgsPoint, QgsFields, QgsCoordinateReferenceSystem
+from qgis.PyQt.QtGui import QIcon
 
-from processing.tools.system import *
+# from processing.tools.system import *
 from processing.core.GeoAlgorithm import GeoAlgorithm
-from processing.core.parameters import *
+from processing.core.parameters import ParameterNumber, ParameterCrs, ParameterExtent, ParameterSelection
 from processing.core.outputs import OutputVector
 from processing.tools import dataobjects, vector
-from lambert_grid_core import LambertGrid
-import proj_util
+from .lambert_grid_core import LambertGrid
+from . import proj_util
 
 
 class LambertGridAlgorithm(GeoAlgorithm):
