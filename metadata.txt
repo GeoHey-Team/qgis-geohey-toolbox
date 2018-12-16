@@ -23,7 +23,7 @@ repository=https://github.com/sshuair/geohey-toolbox
 # Recommended items:
 
 # Uncomment the following line and add your changelog:
-changelog=0.4
+changelog=0.4.1
     - China mars coordinate convert
     - equal area grid
     - add QGIS 3 support
