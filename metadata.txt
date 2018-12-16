@@ -10,27 +10,27 @@
 name=GeoHey Toolbox
 qgisMinimumVersion=2.0
 description= A set of toolbox develop by GeoHey for QGIS
-version=0.1
+version=0.3
 author=GeoHey
 email=sshuair@gmail.com
 
-about= Currently, the toolbox contain China mars coordinate(火星坐标) convert(WGS, GCJ02 and BaiDu coordinate). And a equal area lambert grids generate tool.
+about= Currently, the toolbox contain China mars coordinate(火星坐标) convert(WGS, GCJ02 and BaiDu coordinate). And a equal area lambert grids generate tool. 因国家法律规定，不提供转WGS84的工具
 
-tracker=https://git.oschina.net/geohey/QGIS-Toolbox/issues
-repository=https://git.oschina.net/geohey/QGIS-Toolbox
+tracker=https://github.com/sshuair/geohey-toolbox/issues
+repository=https://github.com/sshuair/geohey-toolbox
 # End of mandatory metadata
 
 # Recommended items:
 
 # Uncomment the following line and add your changelog:
-# changelog=0.1
+changelog=0.3
     - China mars coordinate(火星坐标) convert
     - equal area grid
 
 # Tags are comma separated with spaces allowed
 tags=vector, coordinate, grid
 
-homepage=
+homepage=https://github.com/sshuair/geohey-toolbox
 category=Analysis
 icon=geohey.png
 # experimental flag

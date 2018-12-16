@@ -54,7 +54,7 @@ class GeoHeyProvider(AlgorithmProvider):
         self.activate = False
 
         # Load algorithms
-        self.alglist = [WGS2GCJ() , GCJ2WGS(), GCJ2BD(), BD2GCJ(), WGS2BD(), BD2WGS(),  LambertGridAlgorithm()]
+        self.alglist = [WGS2GCJ(), WGS2BD(), BD2GCJ(), BD2WGS(), GCJ2WGS(), GCJ2BD(), LambertGridAlgorithm()]
         for alg in self.alglist:
             alg.provider = self
 
