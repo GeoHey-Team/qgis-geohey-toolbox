@@ -14,7 +14,7 @@ version=0.4
 author=GeoHey
 email=sshuair@gmail.com
 
-about=Provide a brief description of the plugin and its purpose.
+about=Currently, the toolbox contain China mars coordinate(火星坐标) convert(WGS, GCJ02 and BaiDu coordinate). 因国家法律规定，不提供转WGS84的工具
 
 tracker=https://github.com/sshuair/geohey-toolbox/issues
 repository=https://github.com/sshuair/geohey-toolbox
