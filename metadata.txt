@@ -16,8 +16,8 @@ email=sshuair@gmail.com
 
 about=Currently, the toolbox contain China mars coordinate(火星坐标) convert(WGS, GCJ02 and BaiDu coordinate). 因国家法律规定，不提供转WGS84的工具
 
-tracker=https://github.com/sshuair/geohey-toolbox/issues
-repository=https://github.com/sshuair/geohey-toolbox
+tracker=https://github.com/GeoHey-Team/qgis-geohey-toolbox/issues
+repository=https://github.com/GeoHey-Team/qgis-geohey-toolbox
 # End of mandatory metadata
 
 # Recommended items:
@@ -31,7 +31,7 @@ changelog=0.4.1
 # Tags are comma separated with spaces allowed
 tags=China, vector, coordinate, grid 
 
-homepage=https://github.com/sshuair/geohey-toolbox
+homepage=https://github.com/GeoHey-Team/qgis-geohey-toolbox
 category=Analysis
 icon=icon.png
 # experimental flag
