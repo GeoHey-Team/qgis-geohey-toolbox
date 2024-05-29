@@ -49,7 +49,7 @@ class GeoHeyToolboxProvider(QgsProcessingProvider):
         QgsProcessingProvider.__init__(self)
 
         # Load algorithms
-        self.alglist = [WGS2GCJ(), GCJ2WGS(),  GCJ2BD(), BD2GCJ(), WGS2BD(), BD2WGS()]
+        self.alglist = [WGS2GCJ, GCJ2WGS, GCJ2BD, BD2GCJ, WGS2BD, BD2WGS]
 
     def unload(self):
         """
@@ -63,7 +63,7 @@ class GeoHeyToolboxProvider(QgsProcessingProvider):
         Loads all algorithms belonging to this provider.
         """
         for alg in self.alglist:
-            self.addAlgorithm( alg )
+            self.addAlgorithm( alg() )
 
     def id(self):
         """
