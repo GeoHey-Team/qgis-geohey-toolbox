@@ -8,28 +8,27 @@
 
 [general]
 name=GeoHey Toolbox
-qgisMinimumVersion=3.0
-description=GeoHey Toolbox
-version=0.4
+qgisMinimumVersion=4.0
+qgisMaximumVersion=4.99
+description=China coordinate system converter (WGS84, GCJ02, BD09)
+version=0.5.0
 author=GeoHey
 email=sshuair@gmail.com
 
-about=Currently, the toolbox contain China mars coordinate(火星坐标) convert(WGS, GCJ02 and BaiDu coordinate). 因国家法律规定，不提供转WGS84的工具
+about=坐标转换工具箱：支持 WGS84、GCJ02（火星坐标）、BD09（百度坐标）之间的六向互转。
 
 tracker=https://github.com/GeoHey-Team/qgis-geohey-toolbox/issues
 repository=https://github.com/GeoHey-Team/qgis-geohey-toolbox
-# End of mandatory metadata
 
-# Recommended items:
+changelog=0.5.0
+    - Port to QGIS 4 (Qt6/PyQt6)
+    - Use qgis.PyQt compatibility shim
+    - Refactor: single base class for all 6 algorithms
+    - Add Z-coordinate preservation
+    - Use WKB type enums instead of magic numbers
+    - Remove Python 2 compatibility imports
 
-# Uncomment the following line and add your changelog:
-changelog=0.4.1
-    - China mars coordinate convert
-    - equal area grid
-    - add QGIS 3 support
-
-# Tags are comma separated with spaces allowed
-tags=China, vector, coordinate, grid 
+tags=China, vector, coordinate, GCJ02, WGS84, BD09, 火星坐标, 百度坐标
 
 homepage=https://github.com/GeoHey-Team/qgis-geohey-toolbox
 category=Analysis
