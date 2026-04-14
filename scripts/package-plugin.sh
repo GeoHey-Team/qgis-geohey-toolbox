@@ -21,6 +21,7 @@ cp "$REPO_ROOT/geohey_toolbox.py" "$STAGE_DIR/"
 cp "$REPO_ROOT/geohey_toolbox_provider.py" "$STAGE_DIR/"
 cp "$REPO_ROOT/metadata.txt" "$STAGE_DIR/"
 cp "$REPO_ROOT/icon.png" "$STAGE_DIR/"
+cp "$REPO_ROOT/LICENSE" "$STAGE_DIR/"
 
 cp "$REPO_ROOT/china_offset/__init__.py" "$STAGE_DIR/china_offset/"
 cp "$REPO_ROOT/china_offset/coord_algorithm.py" "$STAGE_DIR/china_offset/"
